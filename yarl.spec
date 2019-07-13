@@ -4,7 +4,7 @@
 #
 Name     : yarl
 Version  : 1.3.0
-Release  : 3
+Release  : 4
 URL      : https://files.pythonhosted.org/packages/fb/84/6d82f6be218c50b547aa29d0315e430cf8a23c52064c92d0a8377d7b7357/yarl-1.3.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/fb/84/6d82f6be218c50b547aa29d0315e430cf8a23c52064c92d0a8377d7b7357/yarl-1.3.0.tar.gz
 Summary  : Yet another URL library
