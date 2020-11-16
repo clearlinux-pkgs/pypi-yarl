@@ -1,5 +1,5 @@
 PKG_NAME := yarl
-URL = https://files.pythonhosted.org/packages/6d/0b/44006eb5b3b7898e54df4b7481839d22d15cf3fc4f0420394ad9e3bb214e/yarl-1.6.2.tar.gz
+URL = https://files.pythonhosted.org/packages/97/e7/af7219a0fe240e8ef6bb555341a63c43045c21ab0392b4435e754b716fa1/yarl-1.6.3.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
