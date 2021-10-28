@@ -4,7 +4,7 @@
 #
 Name     : yarl
 Version  : 1.6.3
-Release  : 24
+Release  : 25
 URL      : https://files.pythonhosted.org/packages/97/e7/af7219a0fe240e8ef6bb555341a63c43045c21ab0392b4435e754b716fa1/yarl-1.6.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/97/e7/af7219a0fe240e8ef6bb555341a63c43045c21ab0392b4435e754b716fa1/yarl-1.6.3.tar.gz
 Summary  : Yet another URL library
@@ -19,6 +19,7 @@ Requires: typing_extensions
 BuildRequires : buildreq-distutils3
 BuildRequires : idna
 BuildRequires : multidict
+BuildRequires : python3-dev
 BuildRequires : typing_extensions
 
 %description
@@ -62,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1605547051
+export SOURCE_DATE_EPOCH=1635453778
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
