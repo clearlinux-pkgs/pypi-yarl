@@ -4,7 +4,7 @@
 #
 Name     : pypi-yarl
 Version  : 1.8.1
-Release  : 35
+Release  : 36
 URL      : https://files.pythonhosted.org/packages/d6/04/255c68974ec47fa754564c4abba8f61f9ed68b869bbbb854198d6259c4f7/yarl-1.8.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/d6/04/255c68974ec47fa754564c4abba8f61f9ed68b869bbbb854198d6259c4f7/yarl-1.8.1.tar.gz
 Summary  : Yet another URL library
