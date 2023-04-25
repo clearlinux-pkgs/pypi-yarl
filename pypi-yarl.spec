@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-yarl
-Version  : 1.9.1
-Release  : 41
-URL      : https://files.pythonhosted.org/packages/ed/02/695dd9ec40214fbad98ffc82e97bbe15d99cb798b837c5af38b5649a20cd/yarl-1.9.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/ed/02/695dd9ec40214fbad98ffc82e97bbe15d99cb798b837c5af38b5649a20cd/yarl-1.9.1.tar.gz
+Version  : 1.9.2
+Release  : 42
+URL      : https://files.pythonhosted.org/packages/5f/3f/04b3c5e57844fb9c034b09c5cb6d2b43de5d64a093c30529fd233e16cf09/yarl-1.9.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/5f/3f/04b3c5e57844fb9c034b09c5cb6d2b43de5d64a093c30529fd233e16cf09/yarl-1.9.2.tar.gz
 Summary  : Yet another URL library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -78,10 +78,10 @@ python3 components for the pypi-yarl package.
 
 
 %prep
-%setup -q -n yarl-1.9.1
-cd %{_builddir}/yarl-1.9.1
+%setup -q -n yarl-1.9.2
+cd %{_builddir}/yarl-1.9.2
 pushd ..
-cp -a yarl-1.9.1 buildavx2
+cp -a yarl-1.9.2 buildavx2
 popd
 
 %build
@@ -89,7 +89,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682273752
+export SOURCE_DATE_EPOCH=1682453876
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
