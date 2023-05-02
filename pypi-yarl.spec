@@ -5,14 +5,12 @@
 #
 Name     : pypi-yarl
 Version  : 1.9.2
-Release  : 42
+Release  : 43
 URL      : https://files.pythonhosted.org/packages/5f/3f/04b3c5e57844fb9c034b09c5cb6d2b43de5d64a093c30529fd233e16cf09/yarl-1.9.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5f/3f/04b3c5e57844fb9c034b09c5cb6d2b43de5d64a093c30529fd233e16cf09/yarl-1.9.2.tar.gz
 Summary  : Yet another URL library
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: pypi-yarl-filemap = %{version}-%{release}
-Requires: pypi-yarl-lib = %{version}-%{release}
 Requires: pypi-yarl-license = %{version}-%{release}
 Requires: pypi-yarl-python = %{version}-%{release}
 Requires: pypi-yarl-python3 = %{version}-%{release}
@@ -28,24 +26,6 @@ The module provides handy URL class for URL parsing and changing.
 .. image:: https://github.com/aio-libs/yarl/workflows/CI/badge.svg
 :target: https://github.com/aio-libs/yarl/actions?query=workflow%3ACI
 :align: right
-
-%package filemap
-Summary: filemap components for the pypi-yarl package.
-Group: Default
-
-%description filemap
-filemap components for the pypi-yarl package.
-
-
-%package lib
-Summary: lib components for the pypi-yarl package.
-Group: Libraries
-Requires: pypi-yarl-license = %{version}-%{release}
-Requires: pypi-yarl-filemap = %{version}-%{release}
-
-%description lib
-lib components for the pypi-yarl package.
-
 
 %package license
 Summary: license components for the pypi-yarl package.
@@ -67,7 +47,6 @@ python components for the pypi-yarl package.
 %package python3
 Summary: python3 components for the pypi-yarl package.
 Group: Default
-Requires: pypi-yarl-filemap = %{version}-%{release}
 Requires: python3-core
 Provides: pypi(yarl)
 Requires: pypi(idna)
@@ -89,12 +68,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682453876
+export SOURCE_DATE_EPOCH=1683049526
 export GCC_IGNORE_WERROR=1
-export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 -m build --wheel --skip-dependency-check --no-isolation
 pushd ../buildavx2/
@@ -129,14 +108,6 @@ popd
 %files
 %defattr(-,root,root,-)
 
-%files filemap
-%defattr(-,root,root,-)
-/usr/share/clear/filemap/filemap-pypi-yarl
-
-%files lib
-%defattr(-,root,root,-)
-/usr/share/clear/optimized-elf/other*
-
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/pypi-yarl/2b8b815229aa8a61e483fb4ba0588b8b6c491890
@@ -146,4 +117,5 @@ popd
 
 %files python3
 %defattr(-,root,root,-)
+/V3/usr/lib/python3*/*
 /usr/lib/python3*/*
