@@ -7,7 +7,7 @@
 #
 Name     : pypi-yarl
 Version  : 1.15.3
-Release  : 49
+Release  : 50
 URL      : https://files.pythonhosted.org/packages/5e/f5/ea4447f08264c84c1fa549b3b481640091b28692866becdd2255dbc4f6cd/yarl-1.15.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5e/f5/ea4447f08264c84c1fa549b3b481640091b28692866becdd2255dbc4f6cd/yarl-1.15.3.tar.gz
 Summary  : Yet another URL library
