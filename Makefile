@@ -1,5 +1,5 @@
 PKG_NAME := pypi-yarl
-URL = https://files.pythonhosted.org/packages/fc/4d/8a8f57caccce49573e567744926f88c6ab3ca0b47a257806d1cf88584c5f/yarl-1.19.0.tar.gz
+URL = https://files.pythonhosted.org/packages/62/51/c0edba5219027f6eab262e139f73e2417b0f4efffa23bf562f6e18f76ca5/yarl-1.20.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
